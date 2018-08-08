@@ -12,6 +12,7 @@ package sample.Model;
 public class Apple extends Seed{
 
     public Apple(double newHT) {
+
         super("Apple", "FruitTree", 7, 7, 7, 5, 5, 3, 7, 10, 55, 3.5, newHT);
     }
     

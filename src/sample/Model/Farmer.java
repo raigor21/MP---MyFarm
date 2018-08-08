@@ -233,6 +233,7 @@ public class Farmer {
     public boolean buySeed(Seed seed)
     {
         double cost = seed.getSC();
+        cost -= level.getEarningBuying();
         cost -= cost*(level.levelDiscount());
 
         if (coins < cost)
@@ -261,6 +262,7 @@ public class Farmer {
     public boolean buyFertilizer()
     {
         double cost = 10;
+        cost -= level.getEarningBuying();
         cost -= cost*(level.levelDiscount());
 
         if (coins < cost)
@@ -272,7 +274,6 @@ public class Farmer {
         {
             System.out.println("Item bought successfully!");
 
-            cost -= cost*(level.levelDiscount());
             coins -= cost;
             inventory.addFertilizer();
             level.addXp(10);

@@ -8,7 +8,7 @@ public class Inventory {
    private int fertilizer;
    private Tools tools;
    private ArrayList<Seed> seeds;
-   
+
    public Inventory(){
        this.tools = new Tools();
        this.fertilizer = 5;

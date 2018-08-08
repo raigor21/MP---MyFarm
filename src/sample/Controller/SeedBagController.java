@@ -268,8 +268,8 @@ public class SeedBagController {
         p1.setOnAction(e -> {
             if (turnipCtr.equals(0))
                 SBLog.setText("You have no seed to plant!");
-            else
-                farmer.setCurSeed();
+            //else
+                //farmer.setCurSeed();
 
         });
 
