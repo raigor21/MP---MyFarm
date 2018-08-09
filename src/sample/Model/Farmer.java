@@ -300,7 +300,7 @@ public class Farmer {
     {
         boolean fail = true;
 
-        if (type.equals("Registered"))
+        if (type.equals("Registered") && level.type.equals("Farmer") && !level.type.equals("Registered"))
         {
             if (coins >= 200)
             {
