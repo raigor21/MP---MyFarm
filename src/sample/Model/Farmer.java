@@ -166,6 +166,8 @@ public class Farmer {
 
                 field.getTiles().get(position).setSeed(seed);
                 field.getTiles().get(position).setIsOccupied(true);
+
+                if (field.getTiles().get(position).getFertilizerApplied() < field.getTiles().get(position).getSeed().getFN_bl())
                 field.getTiles().get(position).getSeed().addNumFertilized( field.getTiles().get(position).getFertilizerApplied() );
             }
 
@@ -324,6 +326,9 @@ public class Farmer {
                 {
                     coins -= 250;
                     fail = false;
+
+                    for (Seed i: inventory.getSeeds())
+                        i.updateHT(level.getHarvestTime());
                 }
             }
         }
@@ -338,6 +343,9 @@ public class Farmer {
                 {
                     coins -= 350;
                     fail = false;
+
+                    for (Seed i: inventory.getSeeds())
+                        i.updateHT(level.getHarvestTime());
                 }
 
             }

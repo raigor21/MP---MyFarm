@@ -2,12 +2,10 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.TextFlow?>
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.SeedBagController">
    <children>
@@ -88,11 +86,8 @@
             <Button fx:id="p1" mnemonicParsing="false" text="Plant" GridPane.columnIndex="3" GridPane.rowIndex="1" />
          </children>
       </GridPane>
-      <TextFlow prefHeight="79.0" prefWidth="600.0">
-         <children>
-            <Label fx:id="coinsDisplay" text="Coins: 0 " />
-            <Label fx:id="expDisplay" text="Exp: 0               " />
-            <TextArea fx:id="SBLog" prefHeight="75.0" prefWidth="346.0" />
-         </children></TextFlow>
+      <Label layoutX="14.0" layoutY="14.0" text="OC: 0" />
+      <Label layoutX="15.0" layoutY="42.0" text="Level: " />
+      <Label layoutX="77.0" layoutY="42.0" text="Label" />
    </children>
 </AnchorPane>
